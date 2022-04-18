@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Customer.h"
 #include "Movie.h"
+#include <vector>
 
 using namespace std;
 
@@ -12,6 +13,7 @@ int main()
     Movie newRelease2{ "신작 2",Movie::NEW_RELEASE };
     Movie children1{ "어린이 1", Movie::CHILDRENS };
     Movie children2{ "어린이 2", Movie::CHILDRENS };
+
     Customer customer{ "고객" };
 
     customer.addRental({ regular1, 2 });
@@ -20,6 +22,12 @@ int main()
     customer.addRental({ newRelease2, 2 });
     customer.addRental({ children1, 3 });
     customer.addRental({ children2, 4 });
+
+    //XML 파일 생성
+    customer.WriteXMLFile();
+
+    //JSON 파일 생성
+    customer.WriteJSONFile();
 
     cout << customer.statement() << endl;
 

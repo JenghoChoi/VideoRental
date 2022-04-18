@@ -4,7 +4,11 @@
 
 #include <string>
 #include <vector>
+#include <fstream>
+#include <iostream>
 #include "Rental.h"
+#include "tinyxml2.h"
+#include "json/json.h"
 
 // The customer class represents the customer of the store
 
@@ -18,6 +22,13 @@ public:
 
   // Generate a statement for the customer
   std::string statement();
+
+  //XML 파일 작성 함수
+  void WriteXMLFile();
+
+  //JSON 파일 작성 함수
+  void WriteJSONFile();
+  bool WriteToFile(const char* filename, const char* buffer, int len);
 
 private:
   std::string customerName;

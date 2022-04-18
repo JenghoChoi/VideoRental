@@ -107,6 +107,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -147,13 +149,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="jsoncpp.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Movie.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Customer.h" />
+    <ClInclude Include="json\json-forwards.h" />
+    <ClInclude Include="json\json.h" />
     <ClInclude Include="Movie.h" />
     <ClInclude Include="Rental.h" />
+    <ClInclude Include="tinyxml2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

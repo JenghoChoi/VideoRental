@@ -1,0 +1,10 @@
+<Root>
+    <MovieData Title="일반 1" Amount="2"/>
+    <MovieData Title="일반 2" Amount="3.5"/>
+    <MovieData Title="신작 1" Amount="3"/>
+    <MovieData Title="신작 2" Amount="6"/>
+    <MovieData Title="어린이 1" Amount="1.5"/>
+    <MovieData Title="어린이 2" Amount="3"/>
+    <TotalAmount>19</TotalAmount>
+    <RentalPoints>7</RentalPoints>
+</Root>

@@ -1,0 +1,30 @@
+{
+   "MovieData" : [
+      {
+         "Amount" : 2.0,
+         "Title" : "일반 1"
+      },
+      {
+         "Amount" : 3.5,
+         "Title" : "일반 2"
+      },
+      {
+         "Amount" : 3.0,
+         "Title" : "신작 1"
+      },
+      {
+         "Amount" : 6.0,
+         "Title" : "신작 2"
+      },
+      {
+         "Amount" : 1.5,
+         "Title" : "어린이 1"
+      },
+      {
+         "Amount" : 3.0,
+         "Title" : "어린이 2"
+      }
+   ],
+   "RentalPoints" : 7,
+   "TotalAmount" : 19.0
+}
