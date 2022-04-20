@@ -8,6 +8,8 @@ public:
   static const int CHILDRENS   = 2;
   static const int REGULAR     = 0;
   static const int NEW_RELEASE = 1;
+  //기존 종류가 아닌 새로운 영화 종류는 3으로 기입
+  static const int OTHERS	   = 3;
 
   Movie( const std::string& title, int priceCode = REGULAR );
 

@@ -42,6 +42,10 @@ std::string Customer::statement()
         if ( each.getDaysRented() > 3 )
           thisAmount += ( each.getDaysRented() - 3 ) * 1.5;
         break;
+
+	  case Movie::OTHERS: //기존 종류 이외의 영화는 모두 2달러로 통일
+		  thisAmount += each.getDaysRented() * 2;
+		  break;
     }
 
     // Add frequent renter points
@@ -104,6 +108,10 @@ void Customer::WriteXMLFile()
 			thisAmount += 1.5;
 			if (each.getDaysRented() > 3)
 				thisAmount += (each.getDaysRented() - 3) * 1.5;
+			break;
+
+		case Movie::OTHERS: //기존 종류 이외의 영화는 모두 2달러로 통일
+			thisAmount += each.getDaysRented() * 2;
 			break;
 		}
 
@@ -171,6 +179,10 @@ void Customer::WriteJSONFile()
 			thisAmount += 1.5;
 			if (each.getDaysRented() > 3)
 				thisAmount += (each.getDaysRented() - 3) * 1.5;
+			break;
+
+		case Movie::OTHERS: //기존 종류 이외의 영화는 모두 2달러로 통일
+			thisAmount += each.getDaysRented() * 2;
 			break;
 		}
 
